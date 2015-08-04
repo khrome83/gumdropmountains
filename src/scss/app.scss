@@ -1,6 +1,7 @@
 @charset 'UTF-8';
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
 
+
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 @import "settings";
 @import "../../node_modules/foundation-sites/scss/foundation/components/_grid";
@@ -40,3 +41,40 @@
 @import "../../node_modules/foundation-sites/scss/foundation/components/_type";
 @import "../../node_modules/foundation-sites/scss/foundation/components/_offcanvas";
 @import "../../node_modules/foundation-sites/scss/foundation/components/_visibility";
+
+.masthead {
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 8px 20px;
+        width: 450px;
+        left: 50%;
+        top: 30%;
+        margin-left: -225px;
+        text-align: center;
+
+    }
+}
+
+.small-slider {
+    width: 320px;
+}
+
+.slick-next {
+    @extend .fa;
+    @extend .fa-chevron-right;
+}
+
+.slick-prev {
+    @extend .fa;
+    @extend .fa-chevron-left;
+
+}

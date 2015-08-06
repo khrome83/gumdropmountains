@@ -68,6 +68,10 @@
     width: 320px;
 }
 
+.slick-slider {
+    margin: 20px 0;
+}
+
 .slick-next {
     @extend .fa;
     @extend .fa-chevron-right;
@@ -77,4 +81,19 @@
     @extend .fa;
     @extend .fa-chevron-left;
 
+}
+
+.slick-list {
+    margin: 0 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+}
+.slick-prev, .slick-next {
+    top: 50px;
+    margin-top: 8px;
+}
+.slick-next {
+    right: 0;
 }

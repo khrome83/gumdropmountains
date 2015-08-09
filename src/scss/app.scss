@@ -69,7 +69,7 @@
     padding: 20px 0;
 }
 
-.gallery {
+.gallery, .gallery-slider {
     margin-top: 20px;
     background-color: #eee;
     padding: 40px 0;
@@ -158,10 +158,11 @@ footer {
     width: 390px;
 }
 
-.slick-slider {
+.slick-slider, .multiple-items {
     margin: 20px 0;
     position: relative;
 }
+
 
 .slick-next {
     @extend .fa;
@@ -187,6 +188,16 @@ footer {
 }
 .slick-next {
     right: 0;
+}
+
+.multiple-items {
+    img {
+        padding: 0 10px;
+    }
+
+    .slick-dots {
+        right: 305px;
+    }
 }
 
 .slick-dots {

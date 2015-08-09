@@ -63,13 +63,104 @@
 
     }
 }
+.promoText {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.gallery {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 40px 0;
+
+    h2 {
+        text-align: right;
+    }
+}
+.primary-nav {
+    background-color: $oil;
+
+    .top-bar-section ul li > a {
+        font-weight: 600;
+    }
+}
+
+.promo-feature {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 40px 0;
+
+    .promo {
+
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        a:hover {
+            .button {
+                background-color: $button-bg-hover;
+                border-color: $button-bg-hover;
+            }
+        }
+
+        .button {
+            position: absolute;
+            width: 250px;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -125px;
+        }
+    }
+}
+
+footer {
+    background-color: $oil;
+    padding: 40px 0;
+    line-height: 20px;
+    color: #fff;
+
+    .copyright {
+        text-align: right;
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+.navigation {
+    padding: 40px 0;
+
+    .button {
+        font-size: 16px;
+        vertical-align: center;
+        margin: 16px auto;
+        width: 300px;
+        display: block;
+
+        &.center {
+            line-height: 30px;
+            padding-bottom: 10px
+        }
+
+        .fa {
+            padding-right: 20px;
+        }
+    }
+}
 
 .small-slider {
-    width: 320px;
+    width: 390px;
 }
 
 .slick-slider {
     margin: 20px 0;
+    position: relative;
 }
 
 .slick-next {
@@ -91,9 +182,39 @@
     position: absolute;
 }
 .slick-prev, .slick-next {
-    top: 50px;
-    margin-top: 8px;
+    top: 50%;
+    margin-top: -8px;
 }
 .slick-next {
     right: 0;
+}
+
+.slick-dots {
+    right: 0px;
+    bottom: -46px;
+    position: absolute;
+    list-style-type: none;
+    display: inline-block;
+    width: 220px;
+
+    li {
+        display: inline-block;
+    }
+
+    button {
+        content: '';
+        padding: 0;
+        height: 12px;
+        width: 12px;
+        margin: 4px;
+        border-radius: 6px;
+        text-indent: -9999px;
+        background-color: $secondary-color;
+    }
+}
+
+.slick-active {
+    button {
+        background-color: $primary-color;
+    }
 }

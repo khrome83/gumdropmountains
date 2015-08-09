@@ -86,8 +86,41 @@
     }
 }
 
+.room-tile {
+    background-color: #fff;
+    padding: 40px 0;
+
+    .feature {
+        width: 100%;
+    }
+
+    .currency-symbol {
+        text-align: right;
+    }
+
+    .money {
+        text-align: right;
+        font-size: 20px;
+        line-height: 15px;
+        padding-top: 10px;
+    }
+
+    .legal {
+        font-size: 13px;
+        font-style: italic;
+    }
+
+    .room-details-short {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+}
+
+.room-tile.dark {
+    background-color: #eee;
+}
+
 .promo-feature {
-    margin-top: 20px;
     background-color: #eee;
     padding: 40px 0;
 

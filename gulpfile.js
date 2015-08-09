@@ -11,6 +11,8 @@ var watch        = require('gulp-watch');
 var minifycss    = require('gulp-minify-css');
 var uglify       = require('gulp-uglify');
 var streamify    = require('gulp-streamify');
+var fileinclude = require('gulp-file-include');
+
 var prod         = gutil.env.prod;
 
 var onError = function(err) {
@@ -40,7 +42,11 @@ function bundle() {
 
 // html
 gulp.task('html', function() {
-  return gulp.src('./src/templates/**/*')
+  return gulp.src(['./src/templates/**/*', '!./src/templates/partials/*'])
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: './src/templates/partials/'
+    }))
     .pipe(processhtml())
     .pipe(gulp.dest('build'))
     .pipe(browserSync.stream());

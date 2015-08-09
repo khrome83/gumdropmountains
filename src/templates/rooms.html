@@ -1,434 +1,77 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gumdrop Mountains Resort</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css" />
-    <link rel="stylesheet" href="./stylesheets/app.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-</head>
+    @@include('./head.html')
 
-<body>
+    @@include('./primary_nav.html')
 
-    <div class="masthead">
-        <h1>Gumdrop Mountains Resort & Spa</h1>
-        <img src="http://dummyimage.com/970x400" alt="A Dummy Image">
-    </div>
+    @@include('./promo_text.html', {
+        "header": "All Our Great Rooms",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni perferendis quas a quod, eveniet provident facere.",
+        "button": "Our Highest Rated",
+        "link": "#"
+    })
 
-    <section class="primary-nav">
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="contain-to-grid sticky">
-                    <nav class="top-bar" data-topbar role="navigation">
-                        <ul class="title-area">
-                            <li class="name">
-                                <h1><a href="#">My Site</a></h1>
-                            </li>
-                            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                            <li class="toggle-topbar menu-icon">
-                                <a href="#">
-                                    <span>Menu</span>
-                                </a>
-                            </li>
-                        </ul>
+    @@include('./gallery_slider.html')
 
-                        <section class="top-bar-section">
-                            <!-- Right Nav Section -->
-                            <ul class="right">
-                                <li class="active"><a href="#">Right Button Active</a></li>
-                                <li class="has-dropdown">
-                                    <a href="#">Right Button Dropdown</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">First link in dropdown</a></li>
-                                        <li class="active"><a href="#">Active link in dropdown</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-form">
-                                    <div class="row collapse">
-                                        <div class="large-8 small-9 columns">
-                                            <input type="text" placeholder="Find Stuff">
-                                        </div>
-                                        <div class="large-4 small-3 columns">
-                                            <a href="#" class="alert button expand">Search</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+    @@include('./room_tile.html', {
+        "name": "Small Room",
+        "price": "199.98",
+        "style": "light",
+        "desc": {
+            "one": "Queen Bed",
+            "two": "Walk in Closet",
+            "three": "Walk-out Balcony",
+            "four": "Mountain View"
+        }
+    })
 
-                            <!-- Left Nav Section -->
-                            <ul class="left">
-                                <li><a href="#">Left Nav Button</a></li>
-                            </ul>
-                        </section>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('./room_tile.html', {
+        "name": "Medium Room",
+        "price": "199.98",
+        "style": "dark",
+        "desc": {
+            "one": "Queen Bed",
+            "two": "Walk in Closet",
+            "three": "Walk-out Balcony",
+            "four": "Mountain View"
+        }
+    })
 
-    <section class="promoText">
-        <div class="row">
-            <div class="small-7 columns">
-                <h2>Welcome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ducimus nulla sed quas, id delectus ex, minus quidem!</p>
-                <a href="#" role="button" class="button">Primary Action</a>
-            </div>
-            <div class="small-5 columns">
-                <div class="small-slider">
-                    <div>
-                        <img src="http://dummyimage.com/390x200" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/390x200" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/390x200" alt="A Dummy Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('./room_tile.html', {
+        "name": "Large Room",
+        "price": "199.98",
+        "style": "light",
+        "desc": {
+            "one": "Queen Bed",
+            "two": "Walk in Closet",
+            "three": "Walk-out Balcony",
+            "four": "Mountain View"
+        }
+    })
 
-    <section class="gallery-slider">
-        <div class="row">
-            <div class="small-12 column">
-                <div class="multiple-items">
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                    <div>
-                        <img src="http://dummyimage.com/350x260" alt="A Dummy Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('./room_tile.html', {
+        "name": "Double Room",
+        "price": "199.98",
+        "style": "dark",
+        "desc": {
+            "one": "Queen Bed",
+            "two": "Walk in Closet",
+            "three": "Walk-out Balcony",
+            "four": "Mountain View"
+        }
+    })
 
+    @@include('./room_tile.html', {
+        "name": "Executive Room",
+        "price": "799.98",
+        "style": "light",
+        "desc": {
+            "one": "Queen Bed",
+            "two": "Walk in Closet",
+            "three": "Walk-out Balcony",
+            "four": "Mountain View"
+        }
+    })
 
-    <section class="room-tile">
-        <div class="row">
-            <div class="small-5 columns">
-                <img class='feature' src="http://dummyimage.com/420x315" alt="A Dummy Image">
-            </div>
-            <div class="small-7 columns">
-                <div class="row">
-                    <div class="small-8 columns">
-                        <h2>Room Title</h2>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="row small-collapse" >
-                            <div class="small-8 columns currency-symbol">
-                                <i class="fa fa-usd fa-3x"></i>
-                            </div>
-                            <div class="small-4 columns money">
-                                199.99<br>
-                                <span class="legal">per night&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row small-collapse">
-                    <div class="small-12 columns">
-                        <a href="#" class="button tiny pull-right">Book Room</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 column">
-                        <ul class="room-details-short">
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('./promo_feature.html')
 
-    <section class="room-tile dark">
-        <div class="row">
-            <div class="small-5 columns">
-                <img class='feature' src="http://dummyimage.com/420x315" alt="A Dummy Image">
-            </div>
-            <div class="small-7 columns">
-                <div class="row">
-                    <div class="small-8 columns">
-                        <h2>Room Title</h2>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="row small-collapse" >
-                            <div class="small-8 columns currency-symbol">
-                                <i class="fa fa-usd fa-3x"></i>
-                            </div>
-                            <div class="small-4 columns money">
-                                199.99<br>
-                                <span class="legal">per night&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row small-collapse">
-                    <div class="small-12 columns">
-                        <a href="#" class="button tiny pull-right">Book Room</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 column">
-                        <ul class="room-details-short">
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="room-tile">
-        <div class="row">
-            <div class="small-5 columns">
-                <img class='feature' src="http://dummyimage.com/420x315" alt="A Dummy Image">
-            </div>
-            <div class="small-7 columns">
-                <div class="row">
-                    <div class="small-8 columns">
-                        <h2>Room Title</h2>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="row small-collapse" >
-                            <div class="small-8 columns currency-symbol">
-                                <i class="fa fa-usd fa-3x"></i>
-                            </div>
-                            <div class="small-4 columns money">
-                                199.99<br>
-                                <span class="legal">per night&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row small-collapse">
-                    <div class="small-12 columns">
-                        <a href="#" class="button tiny pull-right">Book Room</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 column">
-                        <ul class="room-details-short">
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="room-tile dark">
-        <div class="row">
-            <div class="small-5 columns">
-                <img class='feature' src="http://dummyimage.com/420x315" alt="A Dummy Image">
-            </div>
-            <div class="small-7 columns">
-                <div class="row">
-                    <div class="small-8 columns">
-                        <h2>Room Title</h2>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="row small-collapse" >
-                            <div class="small-8 columns currency-symbol">
-                                <i class="fa fa-usd fa-3x"></i>
-                            </div>
-                            <div class="small-4 columns money">
-                                199.99<br>
-                                <span class="legal">per night&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row small-collapse">
-                    <div class="small-12 columns">
-                        <a href="#" class="button tiny pull-right">Book Room</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 column">
-                        <ul class="room-details-short">
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="room-tile">
-        <div class="row">
-            <div class="small-5 columns">
-                <img class='feature' src="http://dummyimage.com/420x315" alt="A Dummy Image">
-            </div>
-            <div class="small-7 columns">
-                <div class="row">
-                    <div class="small-8 columns">
-                        <h2>Room Title</h2>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="row small-collapse" >
-                            <div class="small-8 columns currency-symbol">
-                                <i class="fa fa-usd fa-3x"></i>
-                            </div>
-                            <div class="small-4 columns money">
-                                199.99<br>
-                                <span class="legal">per night&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row small-collapse">
-                    <div class="small-12 columns">
-                        <a href="#" class="button tiny pull-right">Book Room</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 column">
-                        <ul class="room-details-short">
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                            <li>Lorem ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                    <div class="small-3 columns"><img src="http://dummyimage.com/200x120" alt="gallery image"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="promo-feature">
-        <div class="row">
-            <div class="small-12 column">
-                <div class="promo">
-                    <a href="#" title="Book Magic Now">
-                        <img src="http://dummyimage.com/760x310" alt="A Dummy Image">
-                        <div class="button">Book Magic Now</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="row">
-            <div class="small-6 columns">
-                <div class="row">
-                    <ul class="inline-list footer-links">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <ul class="inline-list footer-links">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="small-6 columns">
-                <p class="copyright">© 2015 Copyright. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/bundle.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.small-slider').slick({
-                nextArrow: '<a href="#" class="slick-next"></a>',
-                prevArrow: '<a href="#" class="slick-prev"></a>',
-                dots: true
-            });
-
-            $('.multiple-items').slick({
-              infinite: true,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              nextArrow: '<a href="#" class="slick-next"></a>',
-              prevArrow: '<a href="#" class="slick-prev"></a>',
-              dots: true
-            });
-        });
-    </script>
-
-</body>
-
-</html>
+    @@include('./footer.html')

@@ -1,0 +1,52 @@
+
+    @@include('./head.html', {
+        "title": "- spacing",
+        "header": "Gumdrop Mountains Resort & Spa"
+    })
+
+    @@include('./primary_nav.html')
+
+    @@include('./promo_text.html', {
+        "header": "Welcome to the Spa",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni perferendis quas a quod, eveniet provident facere.",
+        "button": "Book Session",
+        "link": "#book"
+    })
+
+    @@include('./gallery.html', {
+        "title": "Spa-tastic"
+    })
+
+    @@include('./gallery_slider.html', {
+        "style": "light"
+    })
+
+    <a id="hours"></a>
+    @@include('./room_details.html', {
+        "title": "Spa Hours",
+        "bullet": "no-bullet",
+        "desc": {
+            "one": "<string>Monday</strong> - 10am - 5pm",
+            "two": "<string>Tuesday</strong> - Closed",
+            "three": "<string>Wednesday</strong> - Closed",
+            "four": "<string>Thursday</strong> - 10am - 5pm",
+            "five": "<string>Friday</strong> - 9am - 7pm",
+            "six": "<string>Saturday</strong> - 9am - 7pm",
+            "seven": "<string>Sunday</strong> - 10am - 3pm",
+            "eight": ""
+        },
+        "style": "dark"
+    })
+
+    <a id="book"></a>
+    @@include('./navigation.html', {
+        "title": "Contact the Spa",
+        "address1": "19111 W. Absurd Rd.",
+        "address2": "Interest, Abs 55555",
+        "phone": "(410) 555 - 8888 x1212",
+        "style": "light"
+    })
+
+    @@include('./promo_feature.html')
+
+    @@include('./footer.html')

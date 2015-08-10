@@ -18,10 +18,13 @@
         }
     })
 
-    @@include('./gallery_slider.html')
+    @@include('./gallery_slider.html', {
+        "style": "dark"
+    })
 
     @@include('./room_details.html', {
         "title": "Additonal Details",
+        "bullet": "",
         "desc": {
             "one": "Queen Bed",
             "two": "Walk in Closet",
@@ -31,7 +34,8 @@
             "six": "Walk in Closet",
             "seven": "Walk-out Balcony",
             "eight": "Mountain View"
-        }
+        },
+        "style": "light"
     })
 
     @@include('./promo_feature.html')

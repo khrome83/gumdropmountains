@@ -130,6 +130,10 @@
     background-color: #eee;
 }
 
+.search-area, .search-results, .booking, .contact-form {
+    padding: 40px 0;
+}
+
 .promo-feature {
     background-color: #eee;
     padding: 40px 0;
@@ -271,4 +275,12 @@ footer {
     button {
         background-color: $primary-color;
     }
+}
+
+section.light {
+    background-color: #fff;
+}
+
+section.dark {
+    background-color: #eee;
 }

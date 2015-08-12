@@ -1,0 +1,23 @@
+<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+    @@if (one.title) {
+        @@include('breadcrumb_piece.html', {
+            "title": "@@one.title",
+            "link": "@@one.link",
+            "current": "@@one.current"
+        })
+    }
+    @@if (two.title) {
+        @@include('breadcrumb_piece.html', {
+            "title": "@@two.title",
+            "link": "@@two.link",
+            "current": "@@two.current"
+        })
+    }
+    @@if (three.title) {
+        @@include('breadcrumb_piece.html', {
+            "title": "@@three.title",
+            "link": "@@three.link",
+            "current": "@@three.current"
+        })
+    }
+</nav>

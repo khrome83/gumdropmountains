@@ -5,7 +5,7 @@
                 <div class="contain-to-grid sticky">
                     <nav class="top-bar" data-topbar role="navigation">
                         <ul class="title-area">
-                            <li class="name">
+                            <li class="name @@if (active === 'index') {active}">
                                 <h1><a href="index.html">Gumdrop Mountains</a></h1>
                             </li>
                             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -36,15 +36,15 @@
                                 <li class="has-dropdown">
                                     <a href="#">Stay at Resort</a>
                                     <ul class="dropdown">
-                                        <li><a href="rooms.html">All Rooms</a></li>
-                                        <li><a href="room-small.html">Small Room</a></li>
-                                        <li><a href="room-medium.html">Medium Room</a></li>
-                                        <li><a href="room-large.html">Large Room</a></li>
-                                        <li><a href="room-double.html">Double Room</a></li>
-                                        <li><a href="room-executive.html">Executive Room</a></li>
+                                        <li class="@@if (active === 'rooms') {active}"><a href="rooms.html">All Rooms</a></li>
+                                        <li class="@@if (active === 'room-small') {active}"><a href="room-small.html">Small Room</a></li>
+                                        <li class="@@if (active === 'room-medium') {active}"><a href="room-medium.html">Medium Room</a></li>
+                                        <li class="@@if (active === 'room-large') {active}"><a href="room-large.html">Large Room</a></li>
+                                        <li class="@@if (active === 'room-double') {active}"><a href="room-double.html">Double Room</a></li>
+                                        <li class="@@if (active === 'room-executive') {active}"><a href="room-executive.html">Executive Room</a></li>
                                     </ul>
                                 </li>
-                                <li class="has-dropdown">
+                                <li class="has-dropdown @@if (active === 'spa') {active}">
                                     <a href="#">Relax at Spa</a>
                                     <ul class="dropdown">
                                         <li><a href="spa.html">About</a></li>
@@ -52,7 +52,7 @@
                                         <li><a href="spa.html#book">Book Session</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="events.html">Events</a></li>
+                                <li class="@@if (active === 'events') {active}"><a href="events.html">Events</a></li>
                             </ul>
                         </section>
                     </nav>

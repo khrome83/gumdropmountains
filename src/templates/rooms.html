@@ -6,6 +6,20 @@
 
     @@include('./primary_nav.html')
 
+    @@include('./breadcrumb.html', {
+        "one": {
+            "link": "index.html",
+            "title": "Home",
+            "current": ""
+        },
+        "two": {
+            "link": "rooms.html",
+            "title": "All Rooms",
+            "current": "current"
+        },
+        "three": {}
+    })
+
     @@include('./promo_text.html', {
         "header": "All Our Great Rooms",
         "text": "Our luxurary rooms are high-end, loaded with technology, and come with a view unlike any other.",

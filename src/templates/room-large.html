@@ -6,6 +6,24 @@
 
     @@include('./primary_nav.html')
 
+    @@include('./breadcrumb.html', {
+        "one": {
+            "link": "index.html",
+            "title": "Home",
+            "current": ""
+        },
+        "two": {
+            "link": "rooms.html",
+            "title": "All Rooms",
+            "current": ""
+        },
+        "three": {
+            "link": "room-large.html",
+            "title": "Large Room",
+            "current": "current"
+        }
+    })
+
     @@include('./room_tile.html', {
         "name": "Large Room",
         "price": "399.98",

@@ -6,6 +6,20 @@
 
     @@include('./primary_nav.html')
 
+    @@include('./breadcrumb.html', {
+        "one": {
+            "link": "index.html",
+            "title": "Home",
+            "current": ""
+        },
+        "two": {
+            "link": "events.html",
+            "title": "Events",
+            "current": "current"
+        },
+        "three": {}
+    })
+
     @@include('./promo_text.html', {
         "header": "Event Center",
         "text": "We have a 4,500 sq. ft. event space that is loaded with tech and built for business and fun.",

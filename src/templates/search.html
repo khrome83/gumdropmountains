@@ -5,6 +5,20 @@
     })
     @@include('./primary_nav.html')
 
+    @@include('./breadcrumb.html', {
+        "one": {
+            "link": "index.html",
+            "title": "Home",
+            "current": ""
+        },
+        "two": {
+            "link": "search.html",
+            "title": "Search",
+            "current": "current"
+        },
+        "three": {}
+    })
+
     @@include('./search.html')
 
     @@include('./search_results.html')

@@ -5,6 +5,20 @@
 
 @@include('./primary_nav.html')
 
+@@include('./breadcrumb.html', {
+    "one": {
+        "link": "index.html",
+        "title": "Home",
+        "current": ""
+    },
+    "two": {
+        "link": "book.html",
+        "title": "Book Now",
+        "current": "current"
+    },
+    "three": {}
+})
+
 @@include('./booking.html')
 
 @@include('./footer.html')

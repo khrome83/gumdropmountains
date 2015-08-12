@@ -179,6 +179,10 @@ footer {
         color: #fff;
         font-size: 14px;
     }
+
+    .footer-links .active {
+        text-decoration: underline;
+    }
 }
 .navigation {
     padding: 40px 0;
